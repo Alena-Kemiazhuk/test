@@ -17,11 +17,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <xmlFile>src/main/BeanShell.xml</xmlFile> <!--change it before every merge request-->
-                    </suiteXmlFiles>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -54,6 +49,7 @@
                     <formats>
                         <format>xml</format>
                     </formats>
+                    <check/>
                 </configuration>
                 <executions>
                     <execution>
